@@ -12,6 +12,7 @@
     position: absolute;
     top: 70px;
     left: -140px;
+    margin-top: 10px;
 }
 
 .site-logo-text-icon {
@@ -22,48 +23,27 @@
 /** --------------------------------------------------------------
  *  Header
  */
-
-// Size of max navbar button
-.rm-max .rm-small .rm-button {
-    font-size: 2em;
-}
-
-@maxButtonFontSize: 2em;
-
-// Style navbar
-.rm-desktop li {
-    background-color: #096;
-    display: inline-block;
-    margin-bottom: 5px;
-    margin-left: -4px;
-    border: 1px solid black;
-}
-
-@navbarItemBgColor: #096;
-
-
-// Size each item in the header
-.site-logo-text,
-.navbar2,
-.profile {
-    float: left;
-    width: 30%;
-}
-
 .site-header {
     height: 80px;
+    width: 100%;
 }
 
 // Site title
 .site-logo-text {
     font-size: 2em;
+    margin-top: 15px;
 
     a {
         text-decoration: none;
     }
 }
 .flash-wrap img {
-    width: 50em;
+    width: 100%;
+}
+.article img {
+    float: left;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 @media screen and (max-width: 900px) {
     .site-logo-text {
@@ -71,7 +51,8 @@
     }
 
     .navbar2 {
-        width: 50%;
+        display: none;
+        visibility: hidden;
     }
 
     .profile {
